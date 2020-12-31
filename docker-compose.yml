@@ -1,0 +1,10 @@
+version: "3"
+services:
+  dashboard:
+    container_name: dashboard_test
+    image: ethandl/factory-dashboard:v1
+    ports:
+      - "3000:3000"
+      - "3306:3306"
+      - "80:80"
+    restart: always
